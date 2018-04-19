@@ -29,7 +29,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
 
 ## FUNCTIONS
 
-###AcyclicGammoidLinearRepresentation(D, S=None, E=None, matrix=False, M=False, fancy=False, mat_dict=False)
+### AcyclicGammoidLinearRepresentation(D, S=None, E=None, matrix=False, M=False, fancy=False, mat_dict=False)
 
     D __ *ACYCLIC* Digraph
     S __ sinks
@@ -44,13 +44,13 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
     returns a dictionary of vectors representing the gammoid represented by the
     _acyclic_ digraph D
 
-###BiApexMatroid(k)
+### BiApexMatroid(k)
 
     k __ Parameter k, k>= 2
 
     returns the bi-apex matroid B(k)
 
-###CircuitBasisMatroid(circuits, groundset=None)
+### CircuitBasisMatroid(circuits, groundset=None)
 
     circuits __ set of circuits of a matroid
 
@@ -59,7 +59,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
 
     returns a BasisMatroid that corresponds to the circuits given
 
-###DigraphInducedMatroid(D, T, E=None)
+### DigraphInducedMatroid(D, T, E=None)
 
     D __ digraph
     T __ matroid
@@ -71,16 +71,16 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
 
      If E==None, then E=V is used.
 
-###DirectSumMatroidM,N __ matroids
+### DirectSumMatroidM,N __ matroids
 
     returns the direct sum of M and N
 
-###FreeMatroid(E)
+### FreeMatroid(E)
     E __ groundset
 
     returns the free matroid on E
 
-###Gammoid(D, S=None, E=None)
+### Gammoid(D, S=None, E=None)
 
      returns the gammoid wrt. to the digraph D,
      the set of sinks S,
@@ -88,7 +88,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
 
      If E==None, then E=V is used.
 
-###LinearBasisMatroid(A)
+### LinearBasisMatroid(A)
 
     A __ matrix whose columns are vectors representing
           the elements of the matroid
@@ -96,22 +96,22 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
     returns a basis matroid in column numbers that is
           represented by A
 
-###MK(n)
+### MK(n)
 
     returns MK(n)
 
-###MK4()
+### MK4()
 
     returns the MK(4) matroid.
 
-###Mbeta(a,b,c,d,e,f)
+### Mbeta(a,b,c,d,e,f)
 
 
     returns the M_beta matroid for the given configuration
 
     (Bonin, Savitsky)
 
-###MbetaSets(a,b,c,d,e,f)
+### MbetaSets(a,b,c,d,e,f)
 
 
     returns the M_beta matroid sets
@@ -119,11 +119,11 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
 
     (Bonin, Savitsky)
 
-###PathDigraph(path1, path2, ...)
+### PathDigraph(path1, path2, ...)
 
     creates a digraph from the paths given by the vertex lists.
 
-###TransversalMatroid(A)
+### TransversalMatroid(A)
 
     A __ family of subsets of the groundset E
 
@@ -131,22 +131,22 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
     returns a BasisMatroid where the independent sets correspond to the
             partial transversals of the family A
 
-###UniformMatroid(E)
+### UniformMatroid(E)
     E __ groundset
     r __ rank
 
     return the uniform matroid UallDependentFlats(M)
 
-###allFlats(M)
+### allFlats(M)
 
     return a chain-iterator of all flats of M, with ascending rank
 
-###allModularPairsOfFlats(M)
+### allModularPairsOfFlats(M)
 
     returns all modular pairs of flats (i.e. pairs of flats with zero modular defect)
              of a given matroid M.
 
-###allRoutingsBetween(D,T,E)
+### allRoutingsBetween(D,T,E)
 
     D __ digraph
     T __ (gammoid) sinks
@@ -156,7 +156,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
            where a routing consists of a set of paths
            such no two paths do not have a common vertex
 
-###alphaPosetCmp(M)
+### alphaPosetCmp(M)
 
     M __ matroid
 
@@ -164,20 +164,20 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
     (use it with care! a return value of 0 may be equal or incomparable!
      but it is nice for sorting stuff)
 
-###alphaPosetDownsets(M)
+### alphaPosetDownsets(M)
 
     M __ matroid
 
     returns a function that gives the downsets of the alpha_M poset
 
-###alphaPosetLeq(M)
+### alphaPosetLeq(M)
 
     M __ matroid
 
     returns a function that compares whether l <= r with respect to
             the alpha_M poset, and then returns either True of False
 
-###alphaPrimePosetCmp(M, C, e)
+### alphaPrimePosetCmp(M, C, e)
 
     M __ matroid
     C __ minimal elements of a modular cut of M
@@ -189,7 +189,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
             that corresponds to the single element extenion of M by e
             that is described by the modular cut C.
 
-###alphaPrimePosetDownsets(M, C, e)
+### alphaPrimePosetDownsets(M, C, e)
 
     M __ matroid
     C __ minimal elements of a modular cut of M
@@ -201,7 +201,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
             that corresponds to the single element extenion of M by e
             that is described by the modular cut C.
 
-###alphaPrimePosetLeq(M, C, e)
+### alphaPrimePosetLeq(M, C, e)
 
     M __ matroid
     C __ minimal elements of a modular cut of M
@@ -213,7 +213,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
             that corresponds to the single element extenion of M by e
             that is described by the modular cut C.
 
-###alphaVector(M, throughMoebius=False)
+### alphaVector(M, throughMoebius=False)
 
     M __ matroid
 
@@ -225,14 +225,14 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
 
 
 
-###arcBoundStrict(n,r)
+### arcBoundStrict(n,r)
     n __ number of elements in the ground set
     r __ rank
 
     returns the upper bound for the number of arcs needed
     to represent a *strict* gammoid with n elements of rank r
 
-###arcMinimalGammoidStdReprB(M, T=None, vertexLimit=None, arcLimit=None)
+### arcMinimalGammoidStdReprB(M, T=None, vertexLimit=None, arcLimit=None)
 
     M __ matroid
     T __ (optional) sink set (use any base of M)
@@ -240,7 +240,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
     find a standard representation with the sink set T that has a
        minimal cardinality arc set.
 
-###augmentListbacktrackBipartiteInduction(M, N)
+### augmentListbacktrackBipartiteInduction(M, N)
 
     M __ matroid
     N __ matroid
@@ -249,7 +249,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
     if it can be matched to an independent set Y of N using arcs from D
     or None if this is not possible
 
-###calculateAlphaOfExtension(e, C, M, alpha=None, mu=None)
+### calculateAlphaOfExtension(e, C, M, alpha=None, mu=None)
 
 
         e __ name of the new element
@@ -261,7 +261,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
 
     returns the alpha vector of M+e that corresponds to C
 
-###calculateArrowRelation(G,M,I)
+### calculateArrowRelation(G,M,I)
 
     (G,M,I) __ formal context,
 
@@ -276,7 +276,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
                   2 codes g upright-arrow m
                   3 codes g upright-and-downleftarrow m
 
-###cancelCommonFactorsInRow(A)
+### cancelCommonFactorsInRow(A)
 
     A __ matrix
 
@@ -284,25 +284,25 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
 
     (alters matrix)
 
-###canonicalMatroid(M)
+### canonicalMatroid(M)
 
     M __ matroid
 
     returns a minor of M that has no loops, no coloops, no parallel edges
     and no coparallel edges
 
-###canonicalMatroidLabel(M)
+### canonicalMatroidLabel(M)
 
     M __ matroid
 
     returns the canonical label of the matroid M;
            which is a tuple
 
-###canonicalizeSet(x)
+### canonicalizeSet(x)
 
     map x to its canonical labels, if it is canonical. otherwise returns None.
 
-###catalogueAcyclicDBlackBoxes(nI, nO, internalNodes, catalogue=None)
+### catalogueAcyclicDBlackBoxes(nI, nO, internalNodes, catalogue=None)
 
     nI __ number of inputs
     nO __ number of outputs
@@ -312,29 +312,29 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
     returns a dictionary that maps Matrix-tuples to one corresponding DBlackBox;
           i.e. to a tuple
 
-###cfJoin(M,A,B)
+### cfJoin(M,A,B)
 
     calculates the join of two cyclic flats A,B in M
 
-###cfMeet(M,A,B)
+### cfMeet(M,A,B)
 
     calculates the meet of two cyclic flats A,B in M
 
-###checkAlpha(M,complete=False,negativeKeys=False)
+### checkAlpha(M,complete=False,negativeKeys=False)
 
 
     calculate alpha values for all subsets of E(M),
     stop, if for some subset, alpha < 0;
     unless complete=True
 
-###checkClassForInduceds(C)
+### checkClassForInduceds(C)
 
     C __ list of matroids
 
     returns a list of matroids from C and duals of matroids from C
             which have induced elements
 
-###checkOMAxiomC4p(C)
+### checkOMAxiomC4p(C)
     C __ family of signed circuits
 
     returns a list of counterexamples to (C4') in C,
@@ -348,7 +348,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
          but for no circuit Z in C there Z(e) = 0, and for all x
           Z(x) \in {C1(x),C2(x),0}.
 
-###classifySingleElementExtensions(M, x="-1")
+### classifySingleElementExtensions(M, x="-1")
 
     M __ matroid
 
@@ -357,7 +357,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
     returns a dictionary, where the values are lists representatives
             of isomorphism classes of single element extensions of M.
 
-###closeBinaryOps(initial, bin_ops, asymmetric=False)
+### closeBinaryOps(initial, bin_ops, asymmetric=False)
 
     returns the closure of a given initial set under a
     given set of binary operations
@@ -369,7 +369,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
     asymmetric __ set to True, if for some ops, op(x,y) != op(y,x).
                 defaults to False.
 
-###cmpRs(R1,R2, cmp=cmp)
+### cmpRs(R1,R2, cmp=cmp)
 
     R1, R2 __ routings
 
@@ -379,7 +379,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
     where the routing that contains the biggest arc that the other
     routing does not possess, wins
 
-###cmpWrtFlats(l,r, flats)
+### cmpWrtFlats(l,r, flats)
 
     l,r __ operands
 
@@ -388,7 +388,7 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
     compares whether l is a subset of r, and if l is a proper subset,
             whether l in flats
 
-###combineCols(COLS, nspaces=2,ch=" ",sep=" ")
+### combineCols(COLS, nspaces=2,ch=" ",sep=" ")
 
     COLS __ an array of column arrays
 
@@ -401,13 +401,13 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
         collated together.
 
 
-###contractSignedCircuitsTo(...)
+### contractSignedCircuitsTo(...)
     C __ family of signed circuits
     F __ set to contract C to
 
     returns C|'F, the contraction of C to F
 
-###contractVector(V, e, G)
+### contractVector(V, e, G)
     V __ 1 x 2**|G| Matrix
     e __ element of G
     G __ base set of the matrix
@@ -416,17 +416,17 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
             that consists only of entries corresponding to sets that contain
             e
 
-###cyflatFamilyFor(M, X, Z=None)
+### cyflatFamilyFor(M, X, Z=None)
 
     returns the maximal proper subflats that are cyclic (!better double check code!)
 
-###decorateAlphaMatroid(M)
+### decorateAlphaMatroid(M)
     M __ matroid
 
     returns an AlphaMatroid(M) or M, depending whether M has been decorated
     or not.
 
-###deltaAlphaVector(M,C)
+### deltaAlphaVector(M,C)
     M __ matroid
 
     C __ minimal elements of a modular cuts
@@ -438,29 +438,29 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
 
             alpha_N|(M.groundset) = alpha_M + Delta alpha_M
 
-###deltaJA(J, A)
+### deltaJA(J, A)
 
     J __ modular cut
     A __ family of cyclic flats
 
     calculate \delta_\Jcal (\Acal) as in my wrong theorem on presistent violations.
 
-###deltaRestrictions(M,verbose=False)
+### deltaRestrictions(M,verbose=False)
 
     find lower bounds on the delta values of antichains of cyclic flats.
 
-###dependentNonTrivialModularPairsOfFlats(M)
+### dependentNonTrivialModularPairsOfFlats(M)
 
     M __ matroid
 
     returns a generator for all modular pairs of flats that have at least one dependent
         component, and that are incomparable with respect to subset-order.
 
-###dereprCanonicalSet(x)
+### dereprCanonicalSet(x)
 
     turns a canonical representation back into a canonical label-set
 
-###downsetWrtFlats(r,flats)
+### downsetWrtFlats(r,flats)
 
     r __ operand
 
@@ -468,18 +468,18 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
 
     returns the subsets l of r, for which l <=(flats) r holds.
 
-###encodeViolationModularCuts(M)
+### encodeViolationModularCuts(M)
 
     M __ matroid
 
     returns a digraph that encodes how the modular cuts interact with
         the violations of M
 
-###encodeViolationsDigraph(V)
+### encodeViolationsDigraph(V)
 
     V __ violations dictionary
 
-###extensionFlats(M, C, e, viaSage=False)
+### extensionFlats(M, C, e, viaSage=False)
 
     M __ matroid
     C __ minimal elements of a modular cut of M
@@ -490,15 +490,15 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
 
     returns the family of flats of M extended by e corresponding to the cut C
 
-###filterPairsByCut(Pairs, A, B)
+### filterPairsByCut(Pairs, A, B)
 
     returns pairs where one component is a subset of A and the other component is a subset of B
 
-###filterPairsByPrincipalCuts(Pairs, Principals)
+### filterPairsByPrincipalCuts(Pairs, Principals)
 
     returns all pairs such that all components are below at least one element of the principals
 
-###findGammoidConstruction(M, vertexLimit=None)
+### findGammoidConstruction(M, vertexLimit=None)
 
     M __ matroid
 
@@ -508,44 +508,44 @@ This package is experimental. Use at your own risk and ALWAYS DOUBLE CHECK ANY R
             M may be constructed from N,
            or False
 
-###findMatroidIsomorphism(...)
+### findMatroidIsomorphism(...)
     returns either a map proving that M is isomorphic to N,
     or None otherwise.
 
-###findPossibleRightmostBaseMap(M)
+### findPossibleRightmostBaseMap(M)
 
     M __ matroid
 
     returns a rightmost base map; if there is one;
     otherwise returns False
 
-###findSetSystemInjection(SRC, TRG, partial=None, all=False, induced=False)
+### findSetSystemInjection(SRC, TRG, partial=None, all=False, induced=False)
 
     find an injection of the sets in SRC into TRG, such that there is also an injection of elements
 
     partial is a partial set system injection that should be extended.
 
-###findSetSystemIsomorphism = findSetSystemIsomorphismIncidenceStructure
+### findSetSystemIsomorphism = findSetSystemIsomorphismIncidenceStructure
 
 returns either None or a map phi, such that for all
     x in A, phi[x] in B; i.e. an isomorphism of Incidence Structures
 
-###findSetSystemIsomorphismDigraph
+### findSetSystemIsomorphismDigraph
 
 returns either None or a map phi, such that for all
     x in A, phi[x] in B; i.e. an isomorphism of Incidence Structures;
     uses Digraphs
 
-###findSetSystemIsomorphismIncidenceStructure
+### findSetSystemIsomorphismIncidenceStructure
 returns either None or a map phi, such that for all
     x in A, phi[x] in B; i.e. an isomorphism of Incidence Structures
 
-###findSetSystemIsomorphismRecursive
+### findSetSystemIsomorphismRecursive
 returns either None or a map phi, such that for all
     x in A, phi[x] in B; i.e. an isomorphism of Incidence Structures;
     uses recursion on partial phi's
 
-###findViolations(M)
+### findViolations(M)
 
     M __ matroid
 
@@ -553,7 +553,7 @@ returns either None or a map phi, such that for all
     returns a dictionary D,
             where each key is a violation X in V(M)
 
-###formatRouting(R, headline=None, cmp=cmp)
+### formatRouting(R, headline=None, cmp=cmp)
 
     R __ routing
 
@@ -563,94 +563,94 @@ returns either None or a map phi, such that for all
 
     returns an array of strings that displays the routing
 
-###freeSlackVector(Z)
+### freeSlackVector(Z)
 
     returns a 'sum term dict' that corresponds to the slack of a given family, where the rank function is free (a variable)
 
-###gammoidsDb()
+### gammoidsDb()
 
     return a handle to the gammoids database
 
-###gdbCreateFamilyTable(prefix, suffix="_families",db=None)
+### gdbCreateFamilyTable(prefix, suffix="_families",db=None)
 
     create a table that can store families of subsets
 
-###gdbCreateParameterSetTable(params, prefix, suffix="_params", prefix2=None, suffix2="_status", db= None)
+### gdbCreateParameterSetTable(params, prefix, suffix="_params", prefix2=None, suffix2="_status", db= None)
 
     create a table that can hold the representations of parameter sets,
     and fill it
 
-###gdbCreateSubsetTable(prefix, suffix="_subsets",db=None)
+### gdbCreateSubsetTable(prefix, suffix="_subsets",db=None)
 
     creates a table that can store subsets.
 
-###gdbFillFamilyTable(prefix, families, prefix2= None, suffix="_families", suffix2="_subsets",db=None)
+### gdbFillFamilyTable(prefix, families, prefix2= None, suffix="_families", suffix2="_subsets",db=None)
 
     fills a subset-family table with the given families
 
-###gdbFillFamilyTableByIds(prefix, families, prefix2= None, suffix="_families", suffix2="_subsets",db=None)
+### gdbFillFamilyTableByIds(prefix, families, prefix2= None, suffix="_families", suffix2="_subsets",db=None)
 
     here the families are not actual sets but ids of subsets.
 
     fills a subset-family table with the given families
 
-###gdbFillSubsetTable(prefix, family, suffix="_subsets",db=None)
+### gdbFillSubsetTable(prefix, family, suffix="_subsets",db=None)
 
     fills a subset table with a given family of subsets; (id = auto)
 
-###gdbFillSubsetTableWithId(prefix, family, suffix="_subsets",db=None)
+### gdbFillSubsetTableWithId(prefix, family, suffix="_subsets",db=None)
 
     fills a subset table with a given family of subsets; (id = 1,2,...)
 
-###gdbGetFamilyWithId(id_, prefix, prefix2=None, suffix="_families", suffix2="_subsets",db=None)
+### gdbGetFamilyWithId(id_, prefix, prefix2=None, suffix="_families", suffix2="_subsets",db=None)
 
     return the subset family with a given id from the family table
 
-###gdbGetMaxId(table,db=None)
+### gdbGetMaxId(table,db=None)
 
     returns the maximal `id` value of a table, of 0 if there is no such id.
     Useful for iterating over all `id`s.
     Remember that the first `id` is supposed to be 1 (!)
 
-###gdbGetNextFreeId(table,db=None)
+### gdbGetNextFreeId(table,db=None)
 
     get the next free id number to be used in the given table
 
-###gdbGetSubsetId(subset, prefix, suffix="_subsets",db=None)
+### gdbGetSubsetId(subset, prefix, suffix="_subsets",db=None)
 
     return the subsets id from the subset table
 
-###gdbGetSubsetWithId(prefix, family, suffix="_subsets",db=None)
+### gdbGetSubsetWithId(prefix, family, suffix="_subsets",db=None)
 
     return the subset with a given id from the subset table
 
-###gdbSQL(sql, args=None, commit=True, results=True, db=None, newDb=gammoidsDb)
+### gdbSQL(sql, args=None, commit=True, results=True, db=None, newDb=gammoidsDb)
 
     executes sql command on db (or newDb()),
     gives either results or a cursor object; some automatic retries
 
-###gdbSQLbulk(sqls, argss=None, commit=True,results=True,db=None)
+### gdbSQLbulk(sqls, argss=None, commit=True,results=True,db=None)
 
 
     executes sql commands on db or gammoidsDb(),
     gives either results or a cursor object of last command
 
-###gdbTableExists(table,db=None)
+### gdbTableExists(table,db=None)
 
     check whether there is a given table in the database
 
-###getAllColines(M)
+### getAllColines(M)
 
     returns all colines of M (i.e. flats with rank rk(M)-2)
 
-###getAllCopoints(M)
+### getAllCopoints(M)
 
     returns al copoints of M
 
-###getAllFlatsWithElement
+### getAllFlatsWithElement
     returns all flats of M that contain the element e
 
-###getAllInducedAndDuallyInducedElements(M)
+### getAllInducedAndDuallyInducedElements(M)
 
     M __ matroid
 
@@ -658,37 +658,37 @@ returns either None or a map phi, such that for all
     the induced elements of M, and the second component consists of the
     induced elemens of M.dual()
 
-###getAllModularCuts(M)
+### getAllModularCuts(M)
 
     M __ matroid
 
     returns all modular cuts of M, except the empty modular cut.
     (SAGE does not allow an extension with a coloop through M.extension !!)
 
-###getAlpha(M,X)
+### getAlpha(M,X)
 
     M __ matroid
     X __ subset of the groundset
 
     returns alpha_M(X), the value of Mason's alpha function for the set X
 
-###getAlphaSystem(M)
+### getAlphaSystem(M)
     calculate the alpha-transversal system of M
 
-###getAlphaTMatroid(M)
+### getAlphaTMatroid(M)
 
     M __ matroid
 
     returns the transversal matroid of all partial transversals of \mathcal{A}_M;
     where we rather ignore negative alpha values.
 
-###getArcSet(R)
+### getArcSet(R)
 
     R __ list of paths
 
     returns the combined arc set of the paths in R
 
-###getBurmeisterString(G,M,I, name="unnamed")
+### getBurmeisterString(G,M,I, name="unnamed")
 
 
     (G,M,I) __ formal context,
@@ -702,24 +702,24 @@ returns either None or a map phi, such that for all
 
     returns the corresponding Burmeister context file.
 
-###getCanonicalElement(nbr)
+### getCanonicalElement(nbr)
     returns the label for the nbr-th canonical element
 
-###getCanonicalElementList(reqLen=None)
+### getCanonicalElementList(reqLen=None)
 
     returns a list of canonical names for elements; of requested length.
 
-###getCanonicalId(x)
+### getCanonicalId(x)
 
     returns the nbr of the canonical element that is labeled by x
 
-###getCatIdgetChiSign(X, finschi_vector="+++++++++++++-++--++", orderedE=None)
+### getCatIdgetChiSign(X, finschi_vector="+++++++++++++-++--++", orderedE=None)
 
     X __ subset of {1,2,...,n} of rank cardinality for which the sign is desired
 
     returns the sign of chi(X) of the matroid given by a vector from Lukas Finschi's O.M. db.
 
-###getCoflowLattice(C)
+### getCoflowLattice(C)
 
     C __ family of signed subsets of C
 
@@ -729,7 +729,7 @@ returns either None or a map phi, such that for all
             where E is a list mapping the column indexes to their elements wrt. C
             and L is an IntegerLattice that corresponds to the coflow lattice of C
 
-###getCyclicFlatAlphas(M)
+### getCyclicFlatAlphas(M)
 
     M __ matroid
 
@@ -737,7 +737,7 @@ returns either None or a map phi, such that for all
     returns a dictionary that maps each cyclic flat of M
            to its Mason's alpha statistic.
 
-###getCyclicFlatBetas(M)
+### getCyclicFlatBetas(M)
 
     M __ matroid
 
@@ -749,16 +749,16 @@ returns either None or a map phi, such that for all
            the complements of the keys of beta with
            the multiplicity given by the value of that key.
 
-###getCyclicFlats(M)
+### getCyclicFlats(M)
 
     returns all cyclic flats of the matroid M
 
-###getCyclicSets(M)
+### getCyclicSets(M)
 
     returns all cyclic sets of the matroid M,
     which is the union semilattice of all circuits of M
 
-###getDBlackBox(D,X,Y)
+### getDBlackBox(D,X,Y)
 
     D __ digraph
     X __ input vertices
@@ -766,14 +766,14 @@ returns either None or a map phi, such that for all
 
     returns a matrix that codes lambda_(X,D,Y)
 
-###getDbCursor(db)
+### getDbCursor(db)
 
 
        return a new cursor of the database db; automatic retries.
 
     REMEMBER: INSERTING VIA CURSOR NEEDS TO BE COMMITED VIA THE DATABASE OBJECT
 
-###getDiGraphVariableToArcMap(D, S=[])
+### getDiGraphVariableToArcMap(D, S=[])
 
      D __ *ACYCLIC* Digraph
 
@@ -781,11 +781,11 @@ returns either None or a map phi, such that for all
 
      returns a dictionary which maps symbolic indefinites to arcs of D.
 
-###getFileContents(name)
+### getFileContents(name)
 
     returns the contents of the file
 
-###getFinschiIndexAndSign(X ,orderedE=None)
+### getFinschiIndexAndSign(X ,orderedE=None)
 
     X __ subset of {1,2,...,N} of correct cardinality,
          for which the corresponding index of the Finschi chirotope string
@@ -795,19 +795,19 @@ returns either None or a map phi, such that for all
         I is the column index for looking up a particular tuple of elements of E,
         and s is the permutation sign (+1) or (-1).
 
-###getFixedPattern(M)
+### getFixedPattern(M)
 
     M __ matroid.
 
     returns a pattern that corresponds to Finschi-DB orientations of M
 
-###getFlatBases(M,F)
+### getFlatBases(M,F)
     M __ matroid
     F __ flats
 
     returns all bases of the flat F
 
-###getFlatDifference(M1, M2, dependentOnly=False)
+### getFlatDifference(M1, M2, dependentOnly=False)
 
     M1, M2 __ matroids
 
@@ -815,7 +815,7 @@ returns either None or a map phi, such that for all
 
     returns the flats of M1, that are not flats of M2
 
-###getFlatLatticeStandardContext(M)
+### getFlatLatticeStandardContext(M)
 
     M __ matroid
 
@@ -829,55 +829,55 @@ returns either None or a map phi, such that for all
         g = G[i] and m = M[j], then
         I[i][j] == True  iff  gIm in the context.
 
-###getGrepPattern(M)
+### getGrepPattern(M)
 
     M __ matroid
 
     returns a string that can be used to grep orientations of M from
     L. Finschi's dbomview output
 
-###getIndetMatrix
+### getIndetMatrix
     n __ elements (= number of rows)
     r __ rank (= number of columns)
 
     returns a matrix filled with variables that resembles the shape of
             a matrix representing a given matroid on n elements and rank r
 
-###getIntersectionSemilattice(atoms)
+### getIntersectionSemilattice(atoms)
 
     returns the obIntersection - semilattice of the atoms.
 
-###getLeadingMonomial(term,order)
+### getLeadingMonomial(term,order)
 
     term  __ some term containing variables
     order __ tuple/list that prioritizes some variables over others.
 
     returns the leading monomial of term wrt. order.
 
-###getMBlackBox(M, B=None)
+### getMBlackBox(M, B=None)
 
     M __ matroid
 
     B __ base of M (optional; otherwise use M.bases()[0])
 
-###getMatroidAutomorphismGroup(M)
+### getMatroidAutomorphismGroup(M)
 
     M __ matroid
 
     returns the automorphism group of M
 
-###getMaximalFamily(A)
+### getMaximalFamily(A)
 
     returns the subfamily of A that consists of the inclusion maximal sets
 
-###getMaximalPartialTransversals(T)
+### getMaximalPartialTransversals(T)
 
     T __ family of subsets of some groundset
 
 
     returns maximal (partial) transversals for T
 
-###getMaximalRouting(X, Rs, cmpRs=cmpRs)
+### getMaximalRouting(X, Rs, cmpRs=cmpRs)
 
     X  __ source set
     Rs __ list/set of routings
@@ -888,33 +888,33 @@ returns either None or a map phi, such that for all
         with respect to the arc order.
     [this uses the natural order on the arcs]
 
-###getMinimalFamily(A)
+### getMinimalFamily(A)
 
     returns the subfamily of A that consists of the inclusion minimal sets
 
-###getModularCutForElement(M,e)
+### getModularCutForElement(M,e)
 
     returns the modular filter that corresponds to extending
     M\e by e.
 
 
-###getPathArcSet(p)
+### getPathArcSet(p)
 
     p __ path (tuple or list)
 
     returns the set of arcs of p
 
-###getPointsOnColine(M)
+### getPointsOnColine(M)
 
     returns all points of M, that are on a given coline
 
-###getPulledOverModularCutForElements(M,e0,e1)
+### getPulledOverModularCutForElements(M,e0,e1)
 
     returns the pulled-over modular cut(?-candidate?) for e1 as extension of M\e1
     to extend M\{e0,e1};
     as it is in my wrong theorem on persistent violations.
 
-###getRightmostBase(F,D,T)
+### getRightmostBase(F,D,T)
 
     F __ flat of the strict gammoid for (D,T),
          subset of the vertices of D
@@ -926,17 +926,17 @@ returns either None or a map phi, such that for all
     T __ set of (gammoid) sinks
     M __ (optional) Gammoidreturns a dictionary that maps all dependent flats to its rightmost bases
 
-###getSetLattice(atoms)
+### getSetLattice(atoms)
 
     returns the obUnion, obIntersection - lattice of the atoms.
 
-###getSetLatticeLineDiagram(A)
+### getSetLatticeLineDiagram(A)
 
     A __ set family
 
     returns the lattice line diagram digraph for A
 
-###getSignedCircuits(D,T,E, negativeArcs=[], cmp=cmp, verbose=None)
+### getSignedCircuits(D,T,E, negativeArcs=[], cmp=cmp, verbose=None)
 
          D __ digraph
          T __ target vertices
@@ -955,7 +955,7 @@ returns either None or a map phi, such that for all
                  pairs (c,sgn) where sgn is either +1 or -1, and c is an element
                  of the gronudset
 
-###getSignedCocircuits(C, groundset=None)
+### getSignedCocircuits(C, groundset=None)
 
     C __ family of signed circuits of an oriented matroid
 
@@ -964,7 +964,7 @@ returns either None or a map phi, such that for all
 
     return C*, the signed cocircuits of the oriented matroid given by C
 
-###getSimpleSinkPaths(D, S=None, V=None)
+### getSimpleSinkPaths(D, S=None, V=None)
 
     D __ digraph
 
@@ -973,7 +973,7 @@ returns either None or a map phi, such that for all
 
     returns all simple paths ending in sinks and starting in vertices of the gammoid
 
-###getTrueCircuitClosures(M)
+### getTrueCircuitClosures(M)
 
     returns all circuit closures, that are indeed dependent.
 
@@ -981,37 +981,37 @@ returns either None or a map phi, such that for all
       M=  CircuitClosuresMatroid(groundset="abc", circuit_closures={3:["abc"]})
       and even returns True on M.is_valid() )
 
-###getUnionSemilattice(atoms)
+### getUnionSemilattice(atoms)
 
     returns the obUnion - semilattice of the atoms.
 
-###getVar
+### getVar
     returns some SR.var for nbr
 
-###gx_version()
+### gx_version()
 
     returns the version of this EXPERIMENTAL library.
 
-###hasInducedElement(M)
+### hasInducedElement(M)
 
     M __ matroid
 
     returns [e] if M has at least one induced element e,
     or [] otherwise
 
-###hasMK4Minor(M)
+### hasMK4Minor(M)
 
     test whether M has MK4() minor
 
-###hasNonStrictRk3Minor(M)
+### hasNonStrictRk3Minor(M)
 
     M __ matroid
 
-###hasObviousNonGammoidMinor(M)
+### hasObviousNonGammoidMinor(M)
 
     returns true, if M or M.dual() has a rank 3 minor that is not a strict gammoid
 
-###hasSubsetSubimageProperty
+### hasSubsetSubimageProperty
     phi __ map that maps sets to setStr
 
     return Test, if for X,Y with X.issubset(Y) the property
@@ -1019,12 +1019,12 @@ returns either None or a map phi, such that for all
             counterexample 4-tuples (X,Y,phi[X],phi[Y]);
             or an empty list if the property holds.
 
-###inPrincipalCut(A, Principals)
+### inPrincipalCut(A, Principals)
 
     tests whether A is a superset of any of the principal sets, and therefore is in the filter generated by
     Principals
 
-###incrementByOne(now, ends)
+### incrementByOne(now, ends)
 
     now  __ (rw-array) current position
     ends __ strict upper-bounds for each now[i]
@@ -1037,7 +1037,7 @@ returns either None or a map phi, such that for all
     returns the lowest index that has been set to zero
             (return value might point out of the array!)
 
-###ingletonViolation(M, sloppy= None)
+### ingletonViolation(M, sloppy= None)
 
     M __ matroid
 
@@ -1048,13 +1048,13 @@ returns either None or a map phi, such that for all
     returns (W,X,Y,Z) if Ingleton's condition is violated for such a tuple,
     or None.
 
-###intersectAll(X)
+### intersectAll(X)
 
     X __ family of sets
 
     returns \bigcap X
 
-###inverseMatroidInduction(D, T, M)
+### inverseMatroidInduction(D, T, M)
 
     D __ digraph
     T __ set of targets
@@ -1062,18 +1062,18 @@ returns either None or a map phi, such that for all
 
     returns a family of minimal sets of T that have to be dependent.
 
-###isAntiChain(x)
+### isAntiChain(x)
 
     check whether x is an anti-chain of sets.
 
-###isCanonicalSet(x)
+### isCanonicalSet(x)
 
     test whether x only contains canonical labels
 
-###isCyclicSet
+### isCyclicSet
     check whether the set S is cyclic in M
 
-###isElementInduced(M, e)
+### isElementInduced(M, e)
 
     M __ matroid
 
@@ -1082,7 +1082,7 @@ returns either None or a map phi, such that for all
     tests, whether the element e is induced from M.deleteby a digraph. (Which then is a digraph on M.groundset(), such
           that the only non-sink is the element e)
 
-###isGammoid(M, vertexLimit=None, arcLimit=None)
+### isGammoid(M, vertexLimit=None, arcLimit=None)
 
     M __ matroid
 
@@ -1095,10 +1095,10 @@ returns either None or a map phi, such that for all
                     T __ target nodes
                     E __ ground set
 
-###isIncomparable
+### isIncomparable
     return true, if neither A subset B nor B subset A
 
-###isInflated(M, X=None)
+### isInflated(M, X=None)
 
     M __ matroid
     X __ (optionally) a subset of the groundset of M,
@@ -1106,7 +1106,7 @@ returns either None or a map phi, such that for all
     returns a list of elements x from X that correspond to modular cuts
             of M.delete([x]) which are principal filters of a single flat.
 
-###isReorientation
+### isReorientation
         C, D __ families of signed subsets {(x1,sgn(x1)), (x2,sgn(x2)), ...}
             that are the signed circuits of an oriented matroid.
 
@@ -1120,14 +1120,14 @@ returns either None or a map phi, such that for all
              then X consists of elements of D that certify this property,
              Y is the last candidate of flips
 
-###isStrictGammoid(M)
+### isStrictGammoid(M)
 
     M __ matroid
 
     return False if M is not a strict gammoid,
        and True if it is.
 
-###isStrongBaseOrderable(M, E0=None)
+### isStrongBaseOrderable(M, E0=None)
 
      M __ matroid
 
@@ -1141,7 +1141,7 @@ returns either None or a map phi, such that for all
     B1.difference(X).union(phi[X]) is a base of M.
     (E0 is useful for single-element extensions).
 
-###leqWrtFlats(l,r, flats)
+### leqWrtFlats(l,r, flats)
 
     l,r __ operands
 
@@ -1151,11 +1151,11 @@ returns either None or a map phi, such that for all
             whether l in flats;
             returns True if l <=(flats) r.
 
-###lexicographicTuples
+### lexicographicTuples
     E __ groundset
     r __ rank
 
-###liftDipathCycle(D, c=None, x0=None, t0=None):
+### liftDipathCycle(D, c=None, x0=None, t0=None):
 
     D __ Digraph
 
@@ -1169,36 +1169,36 @@ returns either None or a map phi, such that for all
             if no cycle is given and D does not contain a cycle,
             returns D itself.
 
-###linearSubclassToModularCut
+### linearSubclassToModularCut
     M __ matroid
     L __ linear subclass
 
     returns the
         modular cut that corresponds to the linear subclass
 
-###loadListOfFamilies(filename, name=None)
+### loadListOfFamilies(filename, name=None)
 
 
     restore a list of families from a given file,
     possibly overriding its name
 
-###mapViaGraph
+### mapViaGraph
     G __ arcs of a graph
     x __ vertex
 
     maps the element x to the end of the first arc that starts in x
 
-###mapViaGraphInverse
+### mapViaGraphInverse
     G __ arcs of a graph
     x __ vertex
 
     maps the element x to the start of the first arc that ends in x
 
-###minimalViolationsOfHallCondition(A)
+### minimalViolationsOfHallCondition(A)
     A __ dictionary: family of sets
     returns a list of all minimal violations of hall's condition for A
 
-###modularClosureOfPrincipalCut(Pairs, Principals)
+### modularClosureOfPrincipalCut(Pairs, Principals)
 
     Pairs      __ set of (some) modular pairs of a matroid
     Principals __ family of sets that generate a cut
@@ -1206,80 +1206,80 @@ returns either None or a map phi, such that for all
     returns generators of a cut that contains the modular flat intersections of pairs in
             the input cut generated by Principals
 
-###modularCutOfElement(M, e)
+### modularCutOfElement(M, e)
 
     M __ matroid
     e __ element of M
 
     returns the modular cut of M\e that restores M.
 
-###modularDefect(M,A,B)
+### modularDefect(M,A,B)
 
     return the modular defect of A and B in M, i.e.
     rk(A) + rk(B) - rk(A/\B) - rk(A\/ B)
 
-###moebiusMatrixForAlphaPoset(M)
+### moebiusMatrixForAlphaPoset(M)
 
     M __ matroid
 
     returns the Moebius-function of the alpha_M poset.
 
-###newPrincipalElements(Pairs, Principals)
+### newPrincipalElements(Pairs, Principals)
 
     Pairs      __ set of (some) modular pairs of a matroid
     Principals __ family of sets that generate a cut
 
     returns intersection flats of modular pairs that must be in Principals if it is a modular cut
 
-###niceCmp
+### niceCmp
     compares (a,b) first by their len() property,
     then by their inner cmp property
 
-###niceFreeVector(d)
+### niceFreeVector(d)
 
     nice string repr. for a free sum term dictionary
 
-###niceStr(F)
+### niceStr(F)
 
     F __ set family
 
     nice printing set families
 
-###nonEmptyAntiChains(s)
+### nonEmptyAntiChains(s)
 
     s __ family of sets
 
     return subsets of the family s, which are anti-chains
 
-###nonModularPairs(M)
+### nonModularPairs(M)
 
     returns a list of non-modular pairs of flats of the matroid M
 
-###nonTrivialCutGenerators(M)
+### nonTrivialCutGenerators(M)
 
     returns all generators of non-trivial modular cuts of M
 
-###nonTrivialModularPairsOfFlats(M)
+### nonTrivialModularPairsOfFlats(M)
 
     returns all non-trivial modular pairs of a matroid M.
 
-###nullityVector(M)
+### nullityVector(M)
 
     M __ matroid
 
     returns the nullity vector of M
 
-###obIntersection
+### obIntersection
     returns L.intersection(R)
 
-###obUnion
+### obUnion
     returns L.union(R)
 
-###oppositeDigraph(D)
+### oppositeDigraph(D)
 
     returns the opposite digraph of D
 
-###outerMargin
+### outerMargin
     D __ digraph
     X __ set of vertices
 
@@ -1287,11 +1287,11 @@ returns either None or a map phi, such that for all
         the vertices that can be reached from vertices in X,
         but that are not contained in X.
 
-###permutateVector(a, G0, phi)
+### permutateVector(a, G0, phi)
 
     rearranges an alpha vector with respect to the new names given by ph
 
-###pivot(A, column, row=None, unity=True, Z=False, simplify=False)
+### pivot(A, column, row=None, unity=True, Z=False, simplify=False)
 
     pivot on column, row in A;
 
@@ -1306,7 +1306,7 @@ returns either None or a map phi, such that for all
 
     works on/returns a copy of A
 
-###pivotBase(A,B, unity=True)
+### pivotBase(A,B, unity=True)
 
     A __ matrix
     B __ set of base column indices
@@ -1326,7 +1326,7 @@ returns either None or a map phi, such that for all
 
     works/returns on a copy of A
 
-###pivotColOps(A, row, column=None, unity=False, Z=True, simplify=False)
+### pivotColOps(A, row, column=None, unity=False, Z=True, simplify=False)
 
     pivot on row, column in A;
 
@@ -1343,7 +1343,7 @@ returns either None or a map phi, such that for all
 
     works on/returns a copy of A
 
-###pivotDigraph(D, e, b)
+### pivotDigraph(D, e, b)
 
     'pivots' D such that the sink b 'gives' its sink
     property to its in-neighbor e, which in turn
@@ -1352,7 +1352,7 @@ returns either None or a map phi, such that for all
 
     works on/returns a copy of D
 
-###pivotsDigraph(D, p1, p2, ..., verify=True)
+### pivotsDigraph(D, p1, p2, ..., verify=True)
 
     'pivots' D along p1, p2, ....
 
@@ -1361,39 +1361,39 @@ returns either None or a map phi, such that for all
 
     works on/returns a copy of D
 
-###positivityOfColines(M)
+### positivityOfColines(M)
 
     returns the difference of the number of simple copoints
     vs the number of non-simple(fat) copoints as dictionary per coline
 
-###powergroundset(M)
+### powergroundset(M)
 
     M __ matroid
 
     returns powerset(sorted(M.groundset()))
 
-###powerset(s)
+### powerset(s)
 
     return a chain-iterator for the powerset of s
 
-###powersetEvenMinusO(s)
+### powersetEvenMinusO(s)
 
     return a chainsiterator for the powerset of s, excluding the empty set
                                                 and every uneven-cardinality subset
 
-###powersetMinusO(s)
+### powersetMinusO(s)
 
     return a chain-iterator for the powerset of s, excluding the empty set
 
-###powersetMinusOI(s)
+### powersetMinusOI(s)
 
     return a chain-iterator for the powerset of s, excluding the empty set and s
 
-###powersetOdd(s)
+### powersetOdd(s)
 
     return a chain-iterator for the powerset of s, excluding any even cardinality subset
 
-###powersetSubsetIndex(S, X)
+### powersetSubsetIndex(S, X)
 
     S __ subset of X
     X __ universe (list or implicitly sorted)
@@ -1401,13 +1401,13 @@ returns either None or a map phi, such that for all
     returns the iteration index where the subset S occurs in the powerset
     iterator
 
-###printCols(COLS)
+### printCols(COLS)
 
     COLS __ columns
 
     quick print the columns to the screen
 
-###printETA(what, current, total=None, granularity=1000)
+### printETA(what, current, total=None, granularity=1000)
 
 
     print an ETA info.
@@ -1417,16 +1417,16 @@ returns either None or a map phi, such that for all
     total       __ total number of iterations
     granularity __ estimation window count
 
-###printMasonAlpha(M)
+### printMasonAlpha(M)
     print the alpha system
 
-###printSignedCircuitsLatexprnF(X)
+### printSignedCircuitsLatexprnF(X)
 
     X __ list of sets
 
     prints the contents of X sorted by their setStr representation
 
-###reduceDoubleFoundedContext(G, M, I)
+### reduceDoubleFoundedContext(G, M, I)
 
     (G,M,I) __ formal context,
 
@@ -1439,7 +1439,7 @@ returns either None or a map phi, such that for all
             irreducible objects and attributes, and their respective
             relations
 
-###relabelSignedSets(C,sigma)
+### relabelSignedSets(C,sigma)
 
     C __ family of signed subsets
     sigma __ relabelling permutation, i.e.
@@ -1447,22 +1447,22 @@ returns either None or a map phi, such that for all
 
     returns C, where every subset is relabelled by sigma
 
-###relaxHyperplane(M, H)
+### relaxHyperplane(M, H)
 
     M __ matroid
     H __ circuit hyperplane
 
     returns the relaxed matroid
 
-###reprCanonicalSet(x)
+### reprCanonicalSet(x)
 
     returns a number that represents a given canonical set in binary
 
-###resetETA()
+### resetETA()
 
     resets the currect ETA estimate timer.
 
-###restrictMatrix(M, G0, G)
+### restrictMatrix(M, G0, G)
 
         M __ 2**|G| x 2**|G| Matrix
         G0 __ subset of G
@@ -1470,13 +1470,13 @@ returns either None or a map phi, such that for all
 
         returns the appropriately reduced matrix
 
-###restrictSignedCircuitsTo
+### restrictSignedCircuitsTo
     C __ family of signed circuits
     F __ set to contract C to
 
     returns C|F, the restriction of C to F
 
-###restrictVector(V, G0, G)
+### restrictVector(V, G0, G)
 
     V __ 1 x 2**|G| Matrix
     G0 __ subset of G
@@ -1484,11 +1484,11 @@ returns either None or a map phi, such that for all
 
     returns the appropriately reduced matrix
 
-###reverseLexicographicTuples
+### reverseLexicographicTuples
     E __ groundset
     r __ rank
 
-###saveBurmeisterContext(G,M,I, filename)
+### saveBurmeisterContext(G,M,I, filename)
 
 
     (G,M,I) __ formal context,
@@ -1501,7 +1501,7 @@ returns either None or a map phi, such that for all
     filename __ path where context is stored,
             make it end with ".cxt" in order to open it with ConExp...
 
-###searchForAcyclicDBlackBox(rho, internalNodes, searchAll=False)
+### searchForAcyclicDBlackBox(rho, internalNodes, searchAll=False)
 
     rho __ black box
     internalNodes __ number of internal nodes
@@ -1511,17 +1511,17 @@ returns either None or a map phi, such that for all
     returns an acyclic digraph that has the black box rho;
             or None if exhaustive search failed.
 
-###setFamilize(F)
+### setFamilize(F)
 
     turns F into a set family with appropriate frozenset types
 
-###setStr(X)
+### setStr(X)
 
     X __ set
 
     nice printing sets
 
-###setSystemDigraph(A, X=None)
+### setSystemDigraph(A, X=None)
 
     create a set system digraph for the family A;
     where X is the universe of the set system,
@@ -1529,7 +1529,7 @@ returns either None or a map phi, such that for all
 
     returns pair (Digraph, vertex mapping)
 
-###sgnR(R)
+### sgnR(R)
 
     R __ routing
 
@@ -1538,12 +1538,12 @@ returns either None or a map phi, such that for all
 
     returns the sign of R with respect to the builtin ordering in python
 
-###signedSubsetOrthogonal
+### signedSubsetOrthogonal
     C,D __ signed subsets
 
     returns true, if C and D are orthogonal.
 
-###signedSubsetsToIntegerLattice(C)
+### signedSubsetsToIntegerLattice(C)
 
     C __ set of signed subsets
 
@@ -1553,14 +1553,14 @@ returns either None or a map phi, such that for all
             S __ support order
             L __ list of all generators (redundant)
 
-###simplifyMatrix(A)
+### simplifyMatrix(A)
 
     A  __ matrix
 
     simplifies all entries of the given matrix,
     (alters matrix)
 
-###slack(rk,Z,verbose= False)
+### slack(rk,Z,verbose= False)
 
     rk __ rank function or Matroid object
 
@@ -1568,32 +1568,32 @@ returns either None or a map phi, such that for all
 
     calculates the slack of Z wrt. to a rank function (or a matroid)
 
-###sniceStr(X,sep=",")
+### sniceStr(X,sep=",")
            X __ family of signed Subsets
 
            sep __ separator between each signed subset
 
            returns a nicely formatted string
 
-###sortMap(d)
+### sortMap(d)
 
     d __ dictionary
 
     returns a dictionary where all key-tuples are sorted
 
-###ssetStr(X)
+### ssetStr(X)
 
     X __ a signed set, i.e. S consists of tuples
         (s,sgn) where sgn is either 1 or -1
 
     returns a nice string representing the signed set
 
-###subsetVector
+### subsetVector
     A, B __ vectors whose elements evaluate to true/false
 
     checks whether A is a subset of B.
 
-###testCombinatorialOrientation(D,T,E, cmp=cmp, maxN=8200)
+### testCombinatorialOrientation(D,T,E, cmp=cmp, maxN=8200)
 
         D __ digraph
         T __ target vertices
@@ -1607,72 +1607,72 @@ returns either None or a map phi, such that for all
 
     returns error, C,negativeArcs
 
-###testEliminationAxiom(C)
+### testEliminationAxiom(C)
 
     C __ family of circuits
 
     returns violations of the elimination axiom
 
-###to2dimTuple(M)
+### to2dimTuple(M)
 
     M __ matrix (or other kind of 2-dim array)
 
     returns a tuple of tuples of the contents of M
 
-###toSignedSubset(s)
+### toSignedSubset(s)
 
     s __ comma separated element list
 
     returns a signed subset dictionary for s
 
-###transposeTupleTuple(I)
+### transposeTupleTuple(I)
 
     I __ tuple of tuples.
 
     returns a tuple of tuples, where the i-th tuple
         corresponds to the i-th entries of the tuples of I
 
-###uniteAll(X)
+### uniteAll(X)
 
     X __ family of sets
 
     returns \bigcup X
 
-###unniceStr(s)
+### unniceStr(s)
 
     turn back s into F with
     s = niceStr(F)
 
-###unpermutateMatrix(a, G0, phi)
+### unpermutateMatrix(a, G0, phi)
 
     rearranges an mu matrix with respect to the old names
 
-###unpermutateVector(a, G1, phi)
+### unpermutateVector(a, G1, phi)
 
     rearranges an alpha vector with respect to the old names
 
-###unsetStr(s)
+### unsetStr(s)
 
     turn back s into X with
     s = setStr(X)
 
-###upperAndLowerFringes(A, X, Y)
+### upperAndLowerFringes(A, X, Y)
 
 
     find the elements of the set family A, that are just below X
     and that are just above Y, at the same time.
     returns a tuple, (lower-X fringe, upper-Y fringe)
 
-###vertexBound
-###vertexBound2
+### vertexBound
+### vertexBound2
 
-###violationModularCuts(M)
+### violationModularCuts(M)
 
     M __ matroid
 
     returns a violation-modular-cut dictionary
 
-###violations(M,a=None,x=None)
+### violations(M,a=None,x=None)
 
     M __ matroid
 
@@ -1683,12 +1683,12 @@ returns either None or a map phi, such that for all
     (by finding the representations for the negative alpha keys)
         (well, better check the code again!)
 
-###writeListOfFamilies(name, filename, lst=None)
+### writeListOfFamilies(name, filename, lst=None)
 
 
     writes a list of families to a given file
 
-###zetaMatrixForAlphaPoset(M)
+### zetaMatrixForAlphaPoset(M)
 
     M __ matroid
 
